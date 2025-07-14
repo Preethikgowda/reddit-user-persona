@@ -1,0 +1,11 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore environment secrets
+.env
+
+# Ignore AI-generated output files
+persona_*.txt
+
+# Optional: ignore any other direct test files
+Hungry-Move-6603
