@@ -34,44 +34,47 @@ The output includes the user’s inferred age, personality traits (MBTI), motiva
 ```bash
 git clone https://github.com/Preethikgowda/reddit-user-persona.git
 cd reddit-user-persona
-✅ 2. Set Up Your Environment
-bash
-Copy code
+```
+###✅ 2. Set Up Your Environment
+
+```bash
 python -m venv venv
 venv\Scripts\activate    # Windows
 # or
 source venv/bin/activate  # macOS/Linux
 
 pip install -r requirements.txt
-✅ 3. Create Your .env File
+```
+
+###✅ 3. Create Your .env File
 Create a .env file in the root folder based on .env.example:
 
 env
-Copy code
+```
 REDDIT_CLIENT_ID=your_client_id
 REDDIT_CLIENT_SECRET=your_client_secret
 REDDIT_USER_AGENT=script by u/your_reddit_username
 OPENAI_API_KEY=your_openai_key
+```
 🔒 Do NOT share this .env file. It’s in .gitignore by default.
 
-✅ 4. Run the Script
-bash
-Copy code
+###✅ 4. Run the Script
+```bash
 python generate_persona.py
+```
 When prompted, enter a Reddit profile URL:
 
-bash
-Copy code
+```bash
 Enter Reddit user profile URL: https://www.reddit.com/user/spez/
+```
 🔄 Sample Input & Output
 🧷 Input:
-ruby
-Copy code
+```ruby
 https://www.reddit.com/user/_purple_Giraffe/
-📄 Output: persona__purple_Giraffe.txt
+```
+###📄 Output: persona__purple_Giraffe.txt
 <details> <summary>Click to expand sample</summary>
-markdown
-Copy code
+``` markdown
 # _purple_Giraffe
 
 **AGE**  
@@ -92,7 +95,6 @@ Casual User
 **ARCHETYPE**  
 Lurker
 
-...
 
 ## GOALS & NEEDS  
 - "I aim to improve my graphic design skills..."
@@ -102,7 +104,7 @@ Lurker
 - "Trolls and negativity are annoying."
 - "Too much misinformation."
 
-...
+
 </details>
 ✅ The model uses actual Reddit content to infer all traits. If the user has fewer comments, GPT may generalize.
 
