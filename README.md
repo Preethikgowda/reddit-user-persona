@@ -72,9 +72,8 @@ Enter Reddit user profile URL: https://www.reddit.com/user/spez/
 ```ruby
 https://www.reddit.com/user/_purple_Giraffe/
 ```
-###📄 Output: persona__purple_Giraffe.txt
+📄 Output: persona__purple_Giraffe.txt
 <details> <summary>Click to expand sample</summary>
-``` markdown
 # _purple_Giraffe
 
 **AGE**  
